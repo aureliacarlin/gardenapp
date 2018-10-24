@@ -1,0 +1,15 @@
+<h1>Sign In</h1>
+
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+  <label>
+    Email:
+    <input type="email" formControlName="email">
+  </label>
+
+  <label>
+    Password:
+    <input type="password" formControlName="password">
+  </label>
+
+  <input type="submit" value="Sign In" class="button">
+</form>

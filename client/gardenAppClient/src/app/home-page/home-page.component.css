@@ -1,0 +1,45 @@
+img {
+  height: 120vh;
+  width: 100vw;
+  display: block;
+  margin-top: -20vh;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 100vh 50% auto;
+  grid-template-areas:
+    "image image image"
+    "main main main"
+    "plants plants plants";
+}
+
+.image {
+  grid-area: image;
+  background-color: rgb(240, 242, 237);
+}
+
+.main {
+  grid-area: main;
+  color: yellow;
+}
+
+h2 {
+  justify-content: center;
+  left: 50%;
+}
+
+.plants {
+  grid-area: plants;
+}
