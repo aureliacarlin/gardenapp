@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { PageProductService } from './page-product.service';
+import { AmdinPageComponent } from './amdin-page/amdin-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    AmdinPageComponent
   ],
   imports: [
     BrowserModule,

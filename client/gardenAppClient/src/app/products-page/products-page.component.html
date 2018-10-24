@@ -2,7 +2,7 @@
   products-page works!
 </p> 
 
-<ul>
+<!-- <ul>
   <li *ngFor='let product of products'>
     <img [src]='product.product_image'>
       {{product.id}}
@@ -10,4 +10,23 @@
       {{product.product_description}}
       ${{product.product_price}}
   </li>
-</ul>
+</ul> -->
+
+<table *ngFor='let product of products'>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Plant Name</th>
+      <th>Discription</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img [src]='product.product_image'></td>
+      <td>{{product.product_name}}</td>
+      <td>{{product.product_description}}</td>
+      <td>${{product.product_price}}</td>
+    </tr>
+  </tbody>
+</table>
