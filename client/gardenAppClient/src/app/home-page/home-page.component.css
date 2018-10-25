@@ -1,4 +1,4 @@
-img {
+.image img {
   height: 120vh;
   width: 100vw;
   display: block;
@@ -18,11 +18,14 @@ h1 {
 .content {
   display: grid;
   grid-template-columns: 3;
-  grid-template-rows: 100vh 50% auto;
+  grid-template-rows: 100vh 25vh 40vh auto auto auto;
   grid-template-areas:
     "image image image"
+    " .  featured . "
     "main main main"
-    "plants plants plants";
+    " .  products . "
+    "plants plants plants"
+    "ourSpace ourSpace ourSpace";
 }
 
 .image {
@@ -30,16 +33,80 @@ h1 {
   background-color: rgb(240, 242, 237);
 }
 
-.main {
-  grid-area: main;
-  color: yellow;
+.featured {
+  grid-area: featured;
+  place-self: center;
+  color: pink;
+  font-size: 3em;
 }
 
-h2 {
-  justify-content: center;
-  left: 50%;
+.main {
+  grid-area: main;
+  /* background-color: blue;s */
+}
+
+.main img {
+  display: inline-block;
+  grid-area: main;
+  border-radius: 50%;
+  /* justify-content: center; */
+  height: 12em;
+  padding-right: 3em;
+  width: 12em;
+  margin-left: 12%;
+}
+
+.ourSpace {
+  grid-area: ourSpace;
+  background-color: rgb(233, 233, 233);
+  height: 100vh;
+}
+
+.ourSpace img {
+  height: 100vh;
+  width: 650px;
+  float: right;
+}
+
+.words h3 {
+  /* float: left; */
+  font-size: 34px;
+  padding: 1em 2em;
+}
+
+.words p {
+  padding: 1em;
 }
 
 .plants {
   grid-area: plants;
+  justify-content: center;
+  margin-left: 20vh;
+}
+
+.products {
+  grid-area: products;
+  /* align-self: center; */
+  color: green;
+
+  font-size: 3em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 350px;
+  width: 350px;
 }
