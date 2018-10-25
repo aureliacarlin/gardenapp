@@ -9,11 +9,19 @@ import { PageProductService } from './page-product.service';
 import { AmdinPageComponent } from './amdin-page/amdin-page.component';
 import { AdminDeleteService } from './admin-delete.service';
 
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AboutComponent } from './about/about.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductsPageComponent,
     AmdinPageComponent
+
+    NavBarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +31,7 @@ import { AdminDeleteService } from './admin-delete.service';
   providers: [
     PageProductService,
     AdminDeleteService
+
   ],
   bootstrap: [AppComponent]
 })
