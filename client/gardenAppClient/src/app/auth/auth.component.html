@@ -12,5 +12,7 @@
   </label>
 
   <input type="submit" value="Sign In" class="button">
-  <h5 *ngIf='success'><a routerLink="/">DESTROY PRODUCTS</a> </h5>
+  <h5 *ngIf='success'><a routerLink="admin-prod" [class.activated]="AmdinPageComponent == '/admin-prod'">DESTROY
+      PRODUCTS</a>
+  </h5>
 </form>
