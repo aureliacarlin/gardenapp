@@ -1,16 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-// import { HomeComponent } from '../app/app.component';
-import { AmdinPageComponent } from './amdin-page/amdin-page.component';
-import { ProductsPageComponent } from './products-page/products-page.component';
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { AboutComponent } from "./about/about.component";
+import { HomePageComponent } from "../app/home-page/home-page.component";
+import { AuthComponent } from ".//auth/auth.component";
+import { ProductsPageComponent } from "./products-page/products-page.component";
 
 const routes: Routes = [
-  // {
-  //   path: "/",
-  //   component: HomeComponent
-  // },
+  {
+    path: "home",
+    component: HomePageComponent
+  },
   {
     path: "about",
     component: AboutComponent
@@ -21,8 +20,8 @@ const routes: Routes = [
   },
   {
     path: "admin",
-     component: AmdinPageComponent 
-   },
+    component: AuthComponent
+  }
   // {
   //   path: "auth",
   //   component: AuthComponent
@@ -33,4 +32,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
