@@ -1,0 +1,117 @@
+.image img {
+  height: 120vh;
+  width: 100vw;
+  display: block;
+  margin-top: -20vh;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 100vh 25vh 40vh auto auto auto;
+  grid-template-areas:
+    "image image image"
+    " .  featured . "
+    "main main main"
+    " .  products . "
+    "plants plants plants"
+    "ourSpace ourSpace ourSpace";
+}
+
+.image {
+  grid-area: image;
+  background-color: rgb(240, 242, 237);
+}
+
+.featured {
+  grid-area: featured;
+  place-self: center;
+  color: pink;
+  font-size: 3em;
+}
+
+.main {
+  grid-area: main;
+  /* background-color: blue;s */
+}
+
+.plants {
+  grid-area: plants;
+  justify-content: center;
+  margin-left: 20vh;
+}
+
+.products {
+  grid-area: products;
+  /* align-self: center; */
+  color: green;
+
+  font-size: 3em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 350px;
+  width: 350px;
+}
+
+.main img {
+  display: inline-block;
+  grid-area: main;
+  border-radius: 50%;
+  /* justify-content: center; */
+  height: 12em;
+  padding-right: 3em;
+  width: 12em;
+  margin-left: 12%;
+}
+
+.ourSpace {
+  grid-area: ourSpace;
+  background-color: rgb(233, 233, 233);
+  height: 80vh;
+  margin-right: 230px;
+}
+
+.ourSpace img {
+  height: 80vh;
+  width: 550px;
+  float: right;
+}
+.words {
+  right: -60px;
+}
+.words h3 {
+  /* float: left; */
+  font-size: 34px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 24px;
+}
+
+.words p {
+  padding: 1em;
+}
