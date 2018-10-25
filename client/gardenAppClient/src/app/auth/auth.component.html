@@ -1,0 +1,16 @@
+<h1>Sign In</h1>
+
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+  <label>
+    Email:
+    <input type="email" formControlName='email' [(ngModel)]="emailVal">
+  </label>
+
+  <label>
+    Password:
+    <input type="password" formControlName='password' [(ngModel)]="passwordVal">
+  </label>
+
+  <input type="submit" value="Sign In" class="button">
+  <h5 *ngIf='success'><a routerLink="/">DESTROY PRODUCTS</a> </h5>
+</form>
