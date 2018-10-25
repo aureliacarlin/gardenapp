@@ -1,14 +1,13 @@
-<p>
-  amdin-page works!
-</p>
+<body>
+<h1> Admin Page</h1>
 
 <table *ngFor='let product of properties'>
     <thead>
       <tr>
-        <th>Image</th>
-        <th>Plant Name</th>
-        <th>Discription</th>
-        <th>Price</th>
+        <th><u>Image</u></th>
+        <th><u>Plant Name</u></th>
+        <th><u>Discription</u></th>
+        <th><u>Price</u></th>
       </tr>
     </thead>
     <tbody>
@@ -20,4 +19,5 @@
         <button (click)='testDelete(product.id)'>Delete</button>
       </tr>
     </tbody>
-  </table>  
+  </table> 
+  </body> 
