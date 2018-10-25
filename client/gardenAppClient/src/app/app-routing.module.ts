@@ -7,7 +7,7 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   // {
-  //   path: "",
+  //   path: "/",
   //   component: HomeComponent
   // },
   {
@@ -19,9 +19,13 @@ const routes: Routes = [
   //   component: ProductComponent
   // },
   // {
-  //   path: "signin",
-  //   component: SigninComponent
-  // }
+  //   path: "admin",
+  //   component: AmdinPageComponent 
+  // },
+  // {
+  //   path: "auth",
+  //   component: AuthComponent
+  // },
 ];
 
 @NgModule({
