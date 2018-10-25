@@ -1,0 +1,12 @@
+<body>
+  <header>
+    <div class="nav">
+      <ul>
+        <button class="home"><a routerLink="home" [class.activated]="currentUrl == '/'">Home</a></button>
+        <button class="about"><a routerLink="about" [class.activated]="currentUrl == '/about'">About</a></button>
+        <button class="products"><a routerLink="products" [class.activated]="currentUrl == '/products'">Products</a></button>
+        <button class="admin"><a routerLink="admin" [class.activated]="currentUrl == '/admin'" >Admin</a></button>
+      </ul>
+    </div>
+  </header>
+</body>
