@@ -45,39 +45,6 @@ h1 {
   /* background-color: blue;s */
 }
 
-.main img {
-  display: inline-block;
-  grid-area: main;
-  border-radius: 50%;
-  /* justify-content: center; */
-  height: 12em;
-  padding-right: 3em;
-  width: 12em;
-  margin-left: 12%;
-}
-
-.ourSpace {
-  grid-area: ourSpace;
-  background-color: rgb(233, 233, 233);
-  height: 100vh;
-}
-
-.ourSpace img {
-  height: 100vh;
-  width: 650px;
-  float: right;
-}
-
-.words h3 {
-  /* float: left; */
-  font-size: 34px;
-  padding: 1em 2em;
-}
-
-.words p {
-  padding: 1em;
-}
-
 .plants {
   grid-area: plants;
   justify-content: center;
@@ -109,4 +76,42 @@ h1 {
   vertical-align: middle;
   height: 350px;
   width: 350px;
+}
+
+.main img {
+  display: inline-block;
+  grid-area: main;
+  border-radius: 50%;
+  /* justify-content: center; */
+  height: 12em;
+  padding-right: 3em;
+  width: 12em;
+  margin-left: 12%;
+}
+
+.ourSpace {
+  grid-area: ourSpace;
+  background-color: rgb(233, 233, 233);
+  height: 80vh;
+  margin-right: 230px;
+}
+
+.ourSpace img {
+  height: 80vh;
+  width: 550px;
+  float: right;
+}
+.words {
+  right: -60px;
+}
+.words h3 {
+  /* float: left; */
+  font-size: 34px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 24px;
+}
+
+.words p {
+  padding: 1em;
 }
