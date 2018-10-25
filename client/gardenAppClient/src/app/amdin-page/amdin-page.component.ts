@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PageProductService} from '../page-product.service'
+import { AdminDeleteService } from '../admin-delete.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-amdin-page',
@@ -8,9 +10,14 @@ import {PageProductService} from '../page-product.service'
 })
 export class AmdinPageComponent implements OnInit {
 // products;
-  constructor(private service: PageProductService) { 
+  constructor(
+    private service: PageProductService,
+    private adminDelete: AdminDeleteService,
+    private route: ActivatedRoute
+  ) { 
     // this.products = service.getProducts()
   }
+  test = 'Thiis is a test';
 properties;
   ngOnInit() {
     this.service.getProducts().subscribe(data => {
@@ -25,12 +32,15 @@ properties;
       //   console.log(s)
       //   console.log(s.id)
       // })
-
       
-      })
+    })
   }
+          testDelete(id) {
+           this.adminDelete.deleteProducts(id).subscribe();
+            // console.log(id)
+          } 
 
-}
+} 
 
 
 

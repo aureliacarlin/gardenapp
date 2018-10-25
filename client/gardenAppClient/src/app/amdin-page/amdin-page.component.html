@@ -17,6 +17,7 @@
         <td>{{product.product_name}}</td>
         <td>{{product.product_description}}</td>
         <td>${{product.product_price}}</td>
+        <button (click)='testDelete(product.id)'>Delete</button>
       </tr>
     </tbody>
-  </table>
+  </table>  

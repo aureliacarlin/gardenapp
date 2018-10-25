@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { PageProductService } from './page-product.service';
 import { AmdinPageComponent } from './amdin-page/amdin-page.component';
+import { AdminDeleteService } from './admin-delete.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AmdinPageComponent } from './amdin-page/amdin-page.component';
     HttpClientModule
   ],
   providers: [
-    PageProductService
+    PageProductService,
+    AdminDeleteService
   ],
   bootstrap: [AppComponent]
 })
